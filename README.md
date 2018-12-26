@@ -1,2 +1,18 @@
 # vue-demo
-这是一个对于vue简单的一个个人练手项目，我的设计排版能力较差，样子可能比较丑哈哈。（vue简单应用的项目）
+
+> A Vue.js project
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+# build for production with minification
+npm run build
+```
+
+For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
