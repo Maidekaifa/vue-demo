@@ -1,6 +1,9 @@
 <template>
-  <headerview></headerview>
-  
+  <div id="app">
+    <headerview></headerview>
+    <router-view></router-view>
+    <footerview></footerview>
+  </div>
 </template>
 
 <script>
