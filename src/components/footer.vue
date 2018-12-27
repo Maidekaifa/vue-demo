@@ -54,6 +54,10 @@ ul li{
     color: #FFFFFF;
     padding: 10px 0;
 }
+a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
 div{
     width: 100%;
     height: auto;
@@ -63,4 +67,7 @@ div{
     bottom: 0;
 }
 </style>
+<script>
+
+</script>
 

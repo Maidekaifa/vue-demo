@@ -1,30 +1,70 @@
 <template>
     <div>
+    	<!--banner图部分-->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-            	
-            	
                 <div class="swiper-slide">
-                    <img src="../assets/img/banner1.jpg" class="img-responsive center-block" />
+                    <img src="../assets/img/banner1.jpg" alt="banner" class="img-responsive center-block" />
                 </div>
                 <div class="swiper-slide">
-                	<img src="../assets/img/banner1.jpg" class="img-responsive center-block" />
+                	<img src="../assets/img/banner1.jpg" alt="banner" class="img-responsive center-block" />
                 </div>
                 <div class="swiper-slide">
-                	<img src="../assets/img/banner1.jpg" class="img-responsive center-block" />
+                	<img src="../assets/img/banner1.jpg" alt="banner" class="img-responsive center-block" />
                 </div>
                 <div class="swiper-slide">
-                	<img src="../assets/img/banner1.jpg" class="img-responsive center-block" />
-                </div>
-                
-                
+                	<img src="../assets/img/banner1.jpg" alt="banner" class="img-responsive center-block" />
+                </div> 
             </div>
+        </div>
+        <!--主体部分-->
+        <div id="main_part" class="container-fluid">
+        	<div class="col-xs-4">
+        		<a href="#">
+        			<i><img src="" alt="date" /></i>
+        			<p>dateplan</p>
+        		</a>
+        	</div>
+        	
+        	<div class="col-xs-4">
+        		<a href="#">
+        			<i><img src="" alt="date" /></i>
+        			<p>dateplan</p>
+        		</a>
+        	</div>
+        	
+        	<div class="col-xs-4">
+        		<a href="#">
+        			<i><img src="" alt="date" /></i>
+        			<p>dateplan</p>
+        		</a>
+        	</div>
+        	
+        	<div class="col-xs-4">
+        		<a href="#">
+        			<i><img src="" alt="date" /></i>
+        			<p>dateplan</p>
+        		</a>
+        	</div>
+        	
+        	<div class="col-xs-4">
+        		<a href="#">
+        			<i><img src="" alt="date" /></i>
+        			<p>dateplan</p>
+        		</a>
+        	</div>
+        	
+        	<div class="col-xs-4">
+        		<a href="#">
+        			<i><img src="" alt="date" /></i>
+        			<p>dateplan</p>
+        		</a>
+        	</div>
         </div>
     </div>
 </template>
 <script>
 import swiper from 'swiper';
-import '../assets/js/jquery-1.11.3.min';
 export default{
     data(){
         return{
@@ -48,7 +88,7 @@ export default{
     
 }
 </script>
-<style>
+<style scoped>
 @import url("../assets/css/swiper.css");
 .swiper-container{
     width: 100%;
@@ -56,7 +96,9 @@ export default{
 .swiper-slide{
     width: 100%;
 }
-
+#main_part{
+	margin-top: 50px;
+}
 </style>
 
 

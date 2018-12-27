@@ -15,6 +15,6 @@ header p{
     font-size: 16px;
     text-align: center;
     padding: 10px;
-    background: #e1242f;
+    background: #000000;
 }
 </style>
