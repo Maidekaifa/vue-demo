@@ -2,6 +2,8 @@
     <div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
+            	
+            	
                 <div class="swiper-slide">
                     <img src="../assets/img/banner1.jpg" class="img-responsive center-block" />
                 </div>
@@ -14,6 +16,8 @@
                 <div class="swiper-slide">
                 	<img src="../assets/img/banner1.jpg" class="img-responsive center-block" />
                 </div>
+                
+                
             </div>
         </div>
     </div>
@@ -29,6 +33,7 @@ export default{
     },
     mounted(){
         this.swiper= new Swiper('.swiper-container',{
+        	autoplay:3000,
         	loop:true,
             effect : 'cube',
   			cubeEffect: {
