@@ -19,5 +19,9 @@ export default[
     {
         path:"/my",
         component:myview
+    },
+    {
+    	path:"*",
+    	redirect:"/home"
     }
 ]
