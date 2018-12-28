@@ -4,26 +4,26 @@
             <ul>
                 <router-link active-class="active" tag="li" to="/home">
                     <a href="#">
-                        <i></i>
-                        <p>首页</p>
+                        <i class="iconfont icon-shouye1"></i>
+                        <p class="footerTxt">首页</p>
                     </a>
                 </router-link>
                 <router-link active-class="active" tag="li" to="/target">
                     <a href="#">
-                        <i></i>
-                        <p>目标</p>
+                        <i class="iconfont icon-mubiao"></i>
+                        <p class="footerTxt">目标</p>
                     </a>
                 </router-link>
                 <router-link active-class="active" tag="li" to="/memo">
                     <a href="#">
-                        <i></i>
-                        <p>备忘</p>
+                        <i class="iconfont icon-beiwanglu"></i>
+                        <p class="footerTxt">备忘</p>
                     </a>
                 </router-link>
                 <router-link active-class="active" tag="li" to="/my">
                     <a href="#">
-                        <i></i>
-                        <p>我的</p>
+                        <i class="iconfont icon-shouye"></i>
+                        <p class="footerTxt">我的</p>
                     </a>
                 </router-link>
                 
@@ -45,18 +45,20 @@ ul{
 }
 ul li{
     width: 25%;
-    height: auto;
+    height: 55px;
     list-style: none;
     float: left;
     text-align: center;
     font-size: 12px;
-    background: #000000;
-    color: #FFFFFF;
     padding: 10px 0;
 }
 a{
 	text-decoration: none;
-	color: #FFFFFF;
+	color: #555555;
+}
+.footerTxt{
+	text-align: center;
+	display: block;
 }
 div{
     width: 100%;
@@ -65,6 +67,9 @@ div{
     position: absolute;
     left: 0;
     bottom: 0;
+}
+ul li a i{
+	font-size: 24px;
 }
 </style>
 <script>
