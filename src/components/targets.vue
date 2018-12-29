@@ -10,8 +10,8 @@
 	      				<span class="input-group-btn">
 	        				<button @click="add" class="btn btn-default" type="button">添加</button>
 	      				</span>
-	    		</div><!-- /input-group -->
-	  		</div><!-- /.col-lg-6 -->
+	    		</div>
+	  		</div>
 	  	</div>
 	  	<div id="bbs" class="container-fluid">
 	  		<div id="finish">
@@ -27,20 +27,26 @@
 	export default{
 		methods:{
 			focusTxt(){
-				let inputs=$("#vals").val();
-				////////////////////////////////////做到这里
+				alert(1);
+				
 			},
 			add(){
+				let dates=new Date();
+				let hours=dates.getHours();
+				let minutes=dates.getMinutes();
+				let second=dates.getSeconds();
 				let valsTxt=$("#vals").val();
 				let str='<div class="show text-center">';
-				str+='<span class="close"><i class="iconfont icon-Tick"></i></span>';
+				str+='<span class="close"><i v-show=true class="iconfont icon-Tick"></i></span>';
 				str+=valsTxt;
-				str+="</div>"
+				str+="<i>=========></i>";
+				str+="<i>"+hours+"时"+minutes+"分"+second+"秒记录"+"</i>";
+				str+="</div>";
 				let shows=$(".show").text();
 				if(valsTxt!=shows){
 					$("#unfinished").append(str);
 				}else{
-					alert("该目标今天您已经记录啦");
+					alert("该目标您已经记录啦");
 				}
 			}
 		}
