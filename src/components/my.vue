@@ -28,6 +28,7 @@
 		display: inline-block;
 		color: #F9F2F4;
 		font-family: "微软雅黑";
-		font-size: 16px;
+		font-size: 14px;
+		font-weight: bold;
 	}
 </style>
