@@ -5,6 +5,13 @@
 	        	<p>用户名:&nbsp;&nbsp;vue-demo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	        	<p>性别:&nbsp;&nbsp;男</p>
         </header>
+        <section>
+        	<div class="container">
+        		<div class="col-xs-4"></div>
+        		<div class="col-xs-4"></div>
+        		<div class="col-xs-4"></div>
+        	</div>
+        </section>
     </div>
 </template>
 <style scoped>
