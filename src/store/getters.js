@@ -2,5 +2,11 @@
 export default{
 	headerTxt(state){
 		return state.headerTxt;
+	},
+	QR_Code(state){
+		return state.QR_Code;
+	},
+	returns(state){
+		return state.returns;
 	}
 }
