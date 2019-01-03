@@ -7,9 +7,9 @@
         </header>
         <section>
         	<div class="container">
-        		<div class="col-xs-4"></div>
-        		<div class="col-xs-4"></div>
-        		<div class="col-xs-4"></div>
+        		<div class="col-xs-4">1</div>
+        		<div class="col-xs-4">2</div>
+        		<div class="col-xs-4">3</div>
         	</div>
         </section>
     </div>
