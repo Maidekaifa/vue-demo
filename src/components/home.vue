@@ -20,7 +20,7 @@
         	</div>
         </div>
         <!--主体部分-->
-        <div id="main_part" class="container text-center center-block img-responsive" style="background: #FFFFFF;width: 100%;">
+        <div id="main_part" class="container text-center center-block img-responsive">
         	<my-div class="col-xs-4" v-for="(grid,index) in grids" :key="index">
         		<my-a>
         			<i :class="grid.className"></i>
@@ -90,6 +90,8 @@ export default{
 #main_part{
 	margin-top: 5px;
 	padding-top: 15px;
+	background: #FFFFFF;
+	width: 100%;
 }
 </style>
 

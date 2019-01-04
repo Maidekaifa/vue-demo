@@ -33,6 +33,7 @@ export default{
     	this.swiper= new Swiper('.swiper-container',{
         	autoplay:3000,
         	loop:true,
+        	autoplayDisableOnInteraction:false,//用户滑动图片后禁止停止轮播
             effect : 'cube',
   			cubeEffect: {
 			    slideShadows: true,
