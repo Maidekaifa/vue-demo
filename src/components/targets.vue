@@ -1,12 +1,12 @@
 <template>
     <div>
-    	<div class="container-fluid text-center">
+    	<div class="container text-center">
     		<h2>What to do today?</h2>
     	</div>
-    	<div class="row container-fluid">
+    	<div class="container">
 	        <div class="col-lg-6" id="inputTxt">
 	    		<div class="input-group">
-	      			<input id="vals" @focus="focusTxt" type="text" class="form-control" placeholder="Do today...">
+	      			<input id="vals" type="text" class="form-control" placeholder="Do today...">
 	      				<span class="input-group-btn">
 	        				<button @click="add" class="btn btn-default" type="button">添加</button>
 	      				</span>
@@ -26,10 +26,6 @@
 <script>
 	export default{
 		methods:{
-			focusTxt(){
-				alert(1);
-				
-			},
 			add(){
 				let dates=new Date();
 				let hours=dates.getHours();

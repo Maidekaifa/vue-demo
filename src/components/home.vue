@@ -20,55 +20,33 @@
         	</div>
         </div>
         <!--主体部分-->
-        <div id="main_part" class="container text-center center-block img-responsive" style="background: #FFFFFF;">
-        	<div class="col-xs-4">
-        		<a href="#">
-        			<i class="iconfont icon-riqi"></i>
-        			<p>dateplan</p>
-        		</a>
-        	</div>
-        	
-        	<div class="col-xs-4">
-        		<a href="#">
-        			<i class="iconfont icon-bianjibijishishouxie"></i>
-        			<p>notes</p>
-        		</a>
-        	</div>
-        	
-        	<div class="col-xs-4">
-        		<a href="#">
-        			<i class="iconfont icon-beiwanglu1"></i>
-        			<p>memo</p>
-        		</a>
-        	</div>
-        	
-        	<div class="col-xs-4">
-        		<a href="#">
-        			<i class="iconfont icon-chifan2600"></i>
-        			<p>What to eat today?</p>
-        		</a>
-        	</div>
-        	
-        	<div class="col-xs-4">
-        		<a href="#">
-        			<i class="iconfont icon-fangjiashenqingicon-"></i>
-        			<p>When is the vacation?</p>
-        		</a>
-        	</div>
-        	
-        	<div class="col-xs-4">
-        		<a href="#">
-        			<i class="iconfont icon-yundong"></i>
-        			<p>What sports do you do today?</p>
-        		</a>
-        	</div>
+        <div id="main_part" class="container text-center center-block img-responsive" style="background: #FFFFFF;width: 100%;">
+        	<my-div class="col-xs-4" v-for="(grid,index) in grids" :key="index">
+        		<my-a>
+        			<i :class="grid.className"></i>
+        			<p>{{grid.title}}</p>
+        		</my-a>
+        	</my-div>
         </div>
     </div>
 </template>
 <script>
 import Swiperview from './swiper.vue'
 export default{
+	data(){
+		return {
+			grids:[
+					{className:'iconfont icon-riqi',title:'dateplan'},
+					{className:'iconfont icon-bianjibijishishouxie',title:'notes'},
+					{className:'iconfont icon-beiwanglu1',title:'memo'},
+					{className:'iconfont icon-chifan2600',title:'What to eat today?'},
+					{className:'iconfont icon-fangjiashenqingicon-',title:'When is the vacation?'},
+					{className:'iconfont icon-yundong',title:'What sports do you do today?'}
+			]
+		}
+	},
 	components:{
+		//组件挂载
     	Swiperview
    	},
     mounted(){
@@ -112,15 +90,6 @@ export default{
 #main_part{
 	margin-top: 5px;
 	padding-top: 15px;
-}
-#main_part div{
-	margin-top: 20px;
-}
-#main_part a{
-	text-decoration: none;
-}
-#main_part a i{
-	font-size: 36px;
 }
 </style>
 
