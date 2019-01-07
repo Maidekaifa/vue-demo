@@ -6,14 +6,39 @@
 	        	<p>性别:&nbsp;&nbsp;男</p>
         </header>
         <section>
-        	<div class="container">
-        		<div class="col-xs-4">1</div>
-        		<div class="col-xs-4">2</div>
-        		<div class="col-xs-4">3</div>
+        	<div class="container text-center midbody">
+        		<div @click="xgshows" class="col-xs-4 dv1">性格</div>
+        		<div class="col-xs-4 dv2">优点</div>
+        		<div class="col-xs-4 dv3">缺点</div>
         	</div>
+        	<!--
+            	作者：offline
+            	时间：2019-01-07
+            	描述：显示隐藏部分用animation增加过渡效果
+            -->
+	        	<div class="container showMe" v-show="xgshow">		
+	        		<img class="center-block img-responsive animated" src="../assets/img/xingge.jpg" alt="xingge" />
+	        	</div>
+	        	
         </section>
     </div>
 </template>
+<script>
+	import '../assets/css/animation.css'
+	export default{
+		name:'mymessage',
+		data(){
+			return {
+				xgshow:false
+			}
+		},
+		methods:{
+			xgshows(){
+				this.xgshow=true;
+			}
+		}
+	}
+</script>
 <style scoped>
 	*{
 		margin: 0;
@@ -37,5 +62,22 @@
 		font-family: "微软雅黑";
 		font-size: 14px;
 		font-weight: bold;
+	}
+	.midbody{
+		margin-top: 20px;
+		border-top: 1px solid #C0C0C0;
+		padding: 10px;
+	}
+	.dv1{
+		background: #5BC0DE;
+		padding: 10px;
+	}
+	.dv2{
+		background: #DF5000;
+		padding: 10px;
+	}
+	.dv3{
+		background: #FFFF00;
+		padding: 10px;
 	}
 </style>
