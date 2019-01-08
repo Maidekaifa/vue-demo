@@ -9,7 +9,9 @@
 </template>
 
 <script>
+//引入vuex的mapGettrs
 import {mapGetters} from "vuex";
+
 	export default{
 		
 		computed:mapGetters(["headerTxt","QR_Code","returns"]),
@@ -38,6 +40,8 @@ import {mapGetters} from "vuex";
 					this.$store.dispatch("upMy");
 				}else if(to.path=="/news_list"){
 					this.$store.dispatch("upNews");
+				}else if(to.path=="/weekNow"){
+					this.$store.dispatch("upWeek");
 				}
 			}
 		}

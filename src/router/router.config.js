@@ -2,7 +2,9 @@ import homeview from '../components/home.vue';
 import targetview from '../components/targets.vue';
 import memoview from '../components/memo.vue';
 import myview from '../components/my.vue';
-import newsListview from '../components/news_list.vue'
+import newsListview from '../components/news_list.vue';
+import weekNow from '../components/weekNow.vue';
+
 
 export default[
     {
@@ -29,6 +31,11 @@ export default[
     	name:"news_list",
     	path:"/news_list",
     	component:newsListview
+    },
+    {
+    	name:"weekNow",
+    	path:"/weekNow",
+    	component:weekNow
     },
     {//重定向，放在最上面的话优先重定向
     	path:"*",

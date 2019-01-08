@@ -31,6 +31,11 @@ const mutations={
 		state.headerTxt="看看新闻";
 		state.QR_Code=true;
 		state.returns=true;
+	},
+	upWeek(state){
+		state.headerTxt="今天星期几啦";
+		state.QR_Code=true;
+		state.returns=true;
 	}
 }
 

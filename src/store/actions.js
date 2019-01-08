@@ -14,5 +14,8 @@ export default{
 	},
 	upNews({commit}){
 		commit("upNews");
+	},
+	upWeek({commit}){
+		commit("upWeek");
 	}
 }

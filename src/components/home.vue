@@ -6,7 +6,7 @@
         <div class="container-fluid" style="background: #FFFFFF;margin-top: 5px;">
         	<div class="col-xs-4 text-center" id="punch">
         		<a>
-        			<i></i>
+        			<i>{{datenow}}</i>
         			<p>打卡</p>
         		</a>
         	</div>
@@ -37,12 +37,13 @@ import Swiperview from './swiper.vue'
 export default{
 	data(){
 		return {
+			datenow:'',
 			grids:[
 					{className:'iconfont icon-riqi',title:'dateplan',router:{name:"target"}},
 					{className:'iconfont icon-bianjibijishishouxie',title:'Watch the news',router:{name:"news_list"}},
 					{className:'iconfont icon-beiwanglu1',title:'memo',router:{name:"memo"}},
 					{className:'iconfont icon-chifan2600',title:'What to eat today?',router:{name:"news_list"}},
-					{className:'iconfont icon-fangjiashenqingicon-',title:'When is the vacation?',router:{name:"news_list"}},
+					{className:'iconfont icon-fangjiashenqingicon-',title:'When is the vacation?',router:{name:"weekNow"}},
 					{className:'iconfont icon-yundong',title:'What sports do you do today?',router:{name:"news_list"}}
 			]
 		}
@@ -52,15 +53,21 @@ export default{
     	Swiperview
    	},
     mounted(){
-        this.dates();
+        this.datenow=this.dates();
     },
     methods:{
     	dates(){
-    		const dates=new Date;
-    		const year=dates.getFullYear();//年
-    		const month=dates.getMonth()+1;//月
-    		const day=dates.getDate();//日
-    		$("#punch a i").html(year+'年'+month+'月'+day+'日');
+    		let dates=new Date;
+    		let year=dates.getFullYear();//年
+    		let month=dates.getMonth()+1;//月
+    		month = month > 9 ? month : ('0' + month);
+    		let day=dates.getDate();//日
+    		day = day > 9 ? day : ('0' + day);
+    		
+    		//又不知不觉的用起了JQ，手欠！！！$("#punch a i").html(year+'年'+month+'月'+day+'日');
+    		
+    		let datesNow=year+"年"+month+"月"+day+"日";
+    		return datesNow;
     	}
     }
     
