@@ -26,7 +26,7 @@ import {mapGetters} from "vuex";
 		    })
 		},
 		
-		watch:{
+		watch:{//监测路由
 			$route(to){
 				if(to.path=="/target"){//to.path进入哪个路由执行哪个方法
 					this.$store.dispatch("upTarget");
@@ -36,6 +36,8 @@ import {mapGetters} from "vuex";
 					this.$store.dispatch("upMemo");
 				}else if(to.path=="/my"){
 					this.$store.dispatch("upMy");
+				}else if(to.path=="/news_list"){
+					this.$store.dispatch("upNews");
 				}
 			}
 		}

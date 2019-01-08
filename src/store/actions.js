@@ -11,5 +11,8 @@ export default{
 	},
 	upMy({commit}){
 		commit("upMy");
+	},
+	upNews({commit}){
+		commit("upNews");
 	}
 }

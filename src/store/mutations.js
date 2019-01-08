@@ -3,7 +3,7 @@ import getters from "./getters.js";
 const state={
 	headerTxt:"这是我的首页",
 	QR_Code:false,
-	returns:false
+	returns:false 
 		
 }
 const mutations={
@@ -24,6 +24,11 @@ const mutations={
 	},
 	upMy(state){
 		state.headerTxt="我的信息";
+		state.QR_Code=true;
+		state.returns=true;
+	},
+	upNews(state){
+		state.headerTxt="看看新闻";
 		state.QR_Code=true;
 		state.returns=true;
 	}

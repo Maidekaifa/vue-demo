@@ -23,8 +23,10 @@
         <div id="main_part" class="container text-center center-block img-responsive">
         	<my-div class="col-xs-4" v-for="(grid,index) in grids" :key="index">
         		<my-a>
-        			<i :class="grid.className"></i>
-        			<p>{{grid.title}}</p>
+        			<router-link :to="grid.router">
+	        			<i :class="grid.className"></i>
+	        			<p>{{grid.title}}</p>
+	        		</router-link>
         		</my-a>
         	</my-div>
         </div>
@@ -36,12 +38,12 @@ export default{
 	data(){
 		return {
 			grids:[
-					{className:'iconfont icon-riqi',title:'dateplan'},
-					{className:'iconfont icon-bianjibijishishouxie',title:'notes'},
-					{className:'iconfont icon-beiwanglu1',title:'memo'},
-					{className:'iconfont icon-chifan2600',title:'What to eat today?'},
-					{className:'iconfont icon-fangjiashenqingicon-',title:'When is the vacation?'},
-					{className:'iconfont icon-yundong',title:'What sports do you do today?'}
+					{className:'iconfont icon-riqi',title:'dateplan',router:{name:"news_list"}},
+					{className:'iconfont icon-bianjibijishishouxie',title:'notes',router:{name:"news_list"}},
+					{className:'iconfont icon-beiwanglu1',title:'memo',router:{name:"news_list"}},
+					{className:'iconfont icon-chifan2600',title:'What to eat today?',router:{name:"news_list"}},
+					{className:'iconfont icon-fangjiashenqingicon-',title:'When is the vacation?',router:{name:"news_list"}},
+					{className:'iconfont icon-yundong',title:'What sports do you do today?',router:{name:"news_list"}}
 			]
 		}
 	},
