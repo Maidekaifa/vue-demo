@@ -3,7 +3,7 @@
         <header>
         	<span class="QRCode" v-show="QR_Code"><img src="../assets/img/QRCode.png" alt="二维码" /></span>
             <p>{{headerTxt}}</p>
-            <span class="returns" v-show="returns" ><img src="../assets/img/returns.png" alt="返回" /></span>
+            <span @click="$router.back(-1)" class="returns" v-show="returns" ><img src="../assets/img/returns.png" alt="返回" /></span>
         </header>
     </div>
 </template>
