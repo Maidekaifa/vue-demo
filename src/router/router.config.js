@@ -7,6 +7,10 @@ import weekNow from '../components/weekNow.vue';
 
 
 export default[
+	{//重定向，放在最上面的话优先重定向
+    	path:"*",
+    	redirect:"/home"
+   	},
     {
     	name:"home",
         path:"/home",
@@ -36,9 +40,5 @@ export default[
     	name:"weekNow",
     	path:"/weekNow",
     	component:weekNow
-    },
-    {//重定向，放在最上面的话优先重定向
-    	path:"*",
-    	redirect:"/home"
     }
 ]
