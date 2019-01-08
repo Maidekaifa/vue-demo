@@ -38,9 +38,9 @@ export default{
 	data(){
 		return {
 			grids:[
-					{className:'iconfont icon-riqi',title:'dateplan',router:{name:"news_list"}},
-					{className:'iconfont icon-bianjibijishishouxie',title:'notes',router:{name:"news_list"}},
-					{className:'iconfont icon-beiwanglu1',title:'memo',router:{name:"news_list"}},
+					{className:'iconfont icon-riqi',title:'dateplan',router:{name:"target"}},
+					{className:'iconfont icon-bianjibijishishouxie',title:'Watch the news',router:{name:"news_list"}},
+					{className:'iconfont icon-beiwanglu1',title:'memo',router:{name:"memo"}},
 					{className:'iconfont icon-chifan2600',title:'What to eat today?',router:{name:"news_list"}},
 					{className:'iconfont icon-fangjiashenqingicon-',title:'When is the vacation?',router:{name:"news_list"}},
 					{className:'iconfont icon-yundong',title:'What sports do you do today?',router:{name:"news_list"}}
@@ -94,6 +94,9 @@ export default{
 	padding-top: 15px;
 	background: #FFFFFF;
 	width: 100%;
+}
+#main_part i{
+	font-size: 42px;
 }
 </style>
 
