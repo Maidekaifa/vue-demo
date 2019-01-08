@@ -42,6 +42,10 @@ body{
 ul{
     width: 100%;
     height: auto;
+    z-index: 999;
+    position: fixed;
+	bottom: 0;
+	left: 0;
 }
 ul li{
     width: 25%;
@@ -51,10 +55,11 @@ ul li{
     text-align: center;
     font-size: 12px;
     padding: 10px 0;
+    background: #000000;
 }
 a{
 	text-decoration: none;
-	color: #555555;
+	color: #FFFFFF;
 }
 .footerTxt{
 	text-align: center;
