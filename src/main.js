@@ -5,6 +5,12 @@ import App from './App.vue'
 import Mint from 'mint-ui'
 Vue.use(Mint);
 
+//配置axios
+import Axios from 'axios'
+//配置公共URL
+//Axios.defaults.baseURL='https://localhost:8080/static/newList.json'
+Vue.prototype.$axios=Axios;//放到原型链上全局使用
+
 //引入路由
 import VueRouter from 'vue-router'
 Vue.use(VueRouter);

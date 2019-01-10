@@ -1,0 +1,61 @@
+{
+	"status":"0",
+	"message" :[
+		{
+			"id":"1",
+			"imgUrl":"../../static/img/news1.jpg",
+			"title":"新闻一",
+			"add_time":"2019-1-10 10:15",
+			"click":"100"
+		},
+		{
+			"id":"2",
+			"imgUrl":"../../static/img/news2.jpg",
+			"title":"新闻二",
+			"add_time":"2019-1-11 12:15",
+			"click":"80"
+		},
+		{
+			"id":"3",
+			"imgUrl":"../../static/img/news3.jpg",
+			"title":"新闻三",
+			"add_time":"2019-1-16 10:15",
+			"click":"980"
+		},
+		{
+			"id":"4",
+			"imgUrl":"../../static/img/news4.jpg",
+			"title":"新闻四",
+			"add_time":"2019-1-17 10:15",
+			"click":"500"
+		},
+		{
+			"id":"5",
+			"imgUrl":"../../static/img/news5.jpg",
+			"title":"新闻五",
+			"add_time":"2019-1-18 12:15",
+			"click":"600"
+		},
+		{
+			"id":"6",
+			"imgUrl":"../../static/img/news6.jpg",
+			"title":"新闻六",
+			"add_time":"2019-1-19 10:15",
+			"click":"1080"
+		},
+		{
+			"id":"7",
+			"imgUrl":"../../static/img/news7.jpg",
+			"title":"新闻七",
+			"add_time":"2019-1-22 12:15",
+			"click":"745"
+		},
+		{
+			"id":"8",
+			"imgUrl":"../../static/img/news8.jpg",
+			"title":"新闻八",
+			"add_time":"2019-1-30 10:15",
+			"click":"782"
+		}
+	]
+}
