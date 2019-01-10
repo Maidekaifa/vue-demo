@@ -5,7 +5,7 @@
 	        	<p>用户名:&nbsp;&nbsp;vue-demo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	        	<p>性别:&nbsp;&nbsp;男</p>
         </header>
-        <section style="background: #EBCCCC;">
+        <section>
         	<div class="container text-center midbody">
         		<div @click="xgshow=!xgshow" class="col-xs-4 dv1">性格</div>
         		<div @click="ydshow=!ydshow" class="col-xs-4 dv2">优点</div>
@@ -79,7 +79,6 @@
 	}
 	.midbody{
 		margin-top: 20px;
-		border-top: 1px solid #C0C0C0;
 		padding: 10px;
 	}
 	.dv1{

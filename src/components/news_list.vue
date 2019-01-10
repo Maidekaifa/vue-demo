@@ -48,11 +48,13 @@
 	}
 	ul{
 		list-style: none;
+		padding-bottom: 40px;
 	}
 	ul li{
 		position: relative;
 		width: 100%;
 		height: 130px;
+		background: #EBCCCC;
 	}
 	.Txt{
 		padding-top: 20px;
