@@ -33,6 +33,15 @@ Vue.component(MYDIV.name,MYDIV);
 Vue.component(MYA.name,MYA);
 
 
+//定义moment全局日期过滤器
+import Moment from 'moment'
+//{{'xxx' | covertTime('YYYY-MM-DD')}}		格式一
+//{{'xxx' | covertTime('YYYY年MM月DD日')}}		格式二 	********由于格式可能不会固定，所以传两个参数data和formatStr**********
+Vue.filter('covertTime',function(data,formatStr){
+	return Moment(data).format(formatStr);
+})
+
+
 new Vue({
   router,
   store,

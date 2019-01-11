@@ -8,7 +8,7 @@
 						<span>{{news.title}}</span>
 						<div class="news_desc">
 							<p>点击数:{{news.click}}</p>
-							<p>发表时间:{{news.add_time}}</p>
+							<p>发表时间:{{news.add_time | covertTime('YYYY-MM-DD')}}</p>
 						</div>
 					</div>
 				</a>
@@ -60,11 +60,12 @@
 		padding-top: 20px;
 	}
 	.Txt span{
-		line-height: 30px;
-		font-size: 16px;
+		line-height: 20px;
+		font-size: 14px;
 	}
 	.Txt div{
-		margin-top: 20px;
+		margin-top: 8px;
+		padding: 5px;
 	}
 	.Txt div p{
 		font-size: 12px;
