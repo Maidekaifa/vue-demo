@@ -4,6 +4,7 @@ import memoview from '../components/memo.vue';
 import myview from '../components/my.vue';
 import newsListview from '../components/news_list.vue';
 import weekNow from '../components/weekNow.vue';
+//import newsDetail from '../components/news_detail.vue';
 
 
 export default[
@@ -40,5 +41,10 @@ export default[
     	name:"weekNow",
     	path:"/weekNow",
     	component:weekNow
-    }
+    }/*,
+    {
+    	name:"news_detail",
+    	path:"/news_detail",
+    	component:newsDetail
+    }新闻详情页*/
 ]
