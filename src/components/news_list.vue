@@ -3,7 +3,7 @@
 		<navbar title='新闻列表' />
 		<ul>
 			<li v-for="news in newsList" :key="news.id">
-				<a href="#">
+				<router-link :to="{name:news.detail,query:{id:news.id} }">
 					<img class="newsImg" :src="news.imgUrl" />
 					<div class="Txt">
 						<span>{{news.title}}</span>
@@ -12,7 +12,7 @@
 							<p>发表时间:{{news.add_time | covertTime('YYYY-MM-DD')}}</p>
 						</div>
 					</div>
-				</a>
+				</router-link>
 			</li>
 		</ul>
 	</div>

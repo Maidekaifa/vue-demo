@@ -6,6 +6,7 @@
 			"imgUrl":"../../static/img/news1.jpg",
 			"title":"雷军在微博宣布金立原总裁卢伟冰出任红米总经理",
 			"add_time":"2019-1-10 10:15",
+			"detail":"news_detail",
 			"click":"100"
 		},
 		{
@@ -13,6 +14,7 @@
 			"imgUrl":"../../static/img/news2.jpg",
 			"title":"中国联通手机营业厅App上线变更互联网套餐功能",
 			"add_time":"2019-1-11 12:15",
+			"detail":"news_detail",
 			"click":"80"
 		},
 		{
@@ -20,6 +22,7 @@
 			"imgUrl":"../../static/img/news3.jpg",
 			"title":"亚马逊CEO贝佐斯离婚 股东应该担忧还是逢低买入？",
 			"add_time":"2019-1-16 10:15",
+			"detail":"news_detail",
 			"click":"980"
 		},
 		{
@@ -27,6 +30,7 @@
 			"imgUrl":"../../static/img/news4.jpg",
 			"title":"健康中国建设打头阵",
 			"add_time":"2019-1-17 10:15",
+			"detail":"news_detail",
 			"click":"500"
 		},
 		{
@@ -34,6 +38,7 @@
 			"imgUrl":"../../static/img/news5.jpg",
 			"title":"杂粮包咋搭配？懒人可以买直接搭配好的",
 			"add_time":"2019-1-18 12:15",
+			"detail":"news_detail",
 			"click":"600"
 		},
 		{
@@ -41,6 +46,7 @@
 			"imgUrl":"../../static/img/news6.jpg",
 			"title":"丹尼-格林将于今日猛龙对老鹰的比赛轮休",
 			"add_time":"2019-1-19 10:15",
+			"detail":"news_detail",
 			"click":"1080"
 		},
 		{
@@ -48,6 +54,7 @@
 			"imgUrl":"../../static/img/news7.jpg",
 			"title":"火箭这一笔交易一箭三雕，莫雷的目标还很大",
 			"add_time":"2019-1-22 12:15",
+			"detail":"news_detail",
 			"click":"745"
 		},
 		{
@@ -55,6 +62,7 @@
 			"imgUrl":"../../static/img/news8.jpg",
 			"title":"台媒：苹果近期将缩减iPhone XR订单量",
 			"add_time":"2019-1-30 10:15",
+			"detail":"news_detail",
 			"click":"782"
 		}
 	]

@@ -1,12 +1,29 @@
 <template>
 	<div>
-		<p>详情</p>
+		<p>{{newsDetail.text}}</p>
+		<p></p>
 	</div>
 </template>
 
 <script>
 	export default{
-		name:"news_detail"
+		name:"news_detail",
+		data(){
+			return {
+				newsDetail:{}//新闻详情
+			}
+		},
+		created(){
+			//获取路由查询字符串参数ID
+			let id=this.$route.query.id;
+			
+			this.$axios.get('../../static/newDetail.json'+"?id="+id)
+			.then(res=>{
+				this.newsDetail=res.data.message[0];
+			}).catch(err=>{
+				console.log("新闻详情页错误",err);
+			})
+		}
 	}
 </script>
 
