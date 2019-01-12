@@ -1,9 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-//引入Mint-ui组件
-import Mint from 'mint-ui'
-Vue.use(Mint);
+//全局引入Mint-ui组件并挂载
+import MintUI from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(MintUI);
 
 //配置axios
 import Axios from 'axios'

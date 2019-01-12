@@ -1,7 +1,7 @@
 <template>
     <div>
         <header>
-        	<span class="QRCode" v-show="QR_Code"><img src="../assets/img/QRCode.png" alt="二维码" /></span>
+        	<span class="QRCode" v-show="QR_Code"><img @click="run" src="../assets/img/QRCode.png" alt="二维码" /></span>
             <p>{{headerTxt}}</p>
             <span @click="$router.back(-1)" class="returns" v-show="returns" ><img src="../assets/img/returns.png" alt="返回" /></span>
         </header>
@@ -13,6 +13,16 @@
 import {mapGetters} from "vuex";
 
 	export default{
+		methods:{
+			run(){
+				this.$toast({
+					message: '怎么点都不会出来二维码的了',
+  					position: 'middle',
+  					iconClass:'iconfont icon-Tick',
+  					duration: 2000
+				})
+			}
+		},
 		
 		computed:mapGetters(["headerTxt","QR_Code","returns"]),
 
