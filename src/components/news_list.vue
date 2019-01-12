@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<navbar title='新闻列表' />
+		<navbar class="text-center" title='新闻列表' />
 		<ul>
 			<li v-for="news in newsList" :key="news.id">
 				<router-link :to="{name:news.detail,query:{id:news.id} }">

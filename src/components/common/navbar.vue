@@ -18,7 +18,6 @@
 		background: #EBCCCC;
 	}
 	.page-title{
-		margin-left: 32%;
 		line-height: 40px;
 		margin-top: -20px;
 	}
