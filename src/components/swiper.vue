@@ -29,6 +29,7 @@ export default{
             swiper:null
         }
     },
+    //生命周期mounted
     mounted(){
     	this.swiper= new Swiper('.swiper-container',{
         	autoplay:3000,

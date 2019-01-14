@@ -1,7 +1,18 @@
 <template>
 	<div>
-		<p>{{newsDetail.text}}</p>
-		<p></p>
+		
+		
+		<navbar class="text-center" title="新闻详情" />
+		<div class="container" style="margin-top: 20px;">
+			<p>点击数:{{newsDetail.click}}</p>
+			<p>发表时间:{{newsDetail.add_time}}</p>
+		</div>
+		<hr />
+		<div class="container">
+			<p>{{newsDetail.text}}</p>
+		</div>
+	
+		
 	</div>
 </template>
 
@@ -19,8 +30,8 @@
 			
 			this.$axios.get('../../static/newDetail.json'+"?id="+id)
 			.then(res=>{
-				this.newsDetail=res.data.message[0];
-			}).catch(err=>{
+				this.newsDetail=res.data.message[id-1];//因为下标从0开始
+				}).catch(err=>{
 				console.log("新闻详情页错误",err);
 			})
 		}
