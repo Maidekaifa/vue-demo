@@ -6,16 +6,17 @@
     	<div class="container">
 	        <div class="col-lg-6" id="inputTxt">
 	    		<div class="input-group">
-	      			<input id="vals" type="text" class="form-control" placeholder="Do today...">
+	      			<input v-model="newTarget" id="vals" type="text" class="form-control" placeholder="Do today...">
 	      				<span class="input-group-btn">
-	        				<button @click="add" class="btn btn-default" type="button">添加</button>
+	        				<button @click="addtarget" class="btn btn-default" type="button">添加</button>
 	      				</span>
 	    		</div>
 	  		</div>
 	  	</div>
 	  	<div id="bbs" class="container-fluid">
-	  		<div id="finish">
-	  			<p class="complete">finish</p>
+	  		<div id="finish" v-for="(target,index) in targets" :key="target"  @click="targetidx(index)">
+	  			<p class="text-center">{{target}}&nbsp;&nbsp;&nbsp;<i class="iconfont icon-jian" @click="targetdel"></i></p>
+	  			
 	  		</div>
 	  		<div id="unfinished">
 	  			<p class="complete">unfinished</p>
@@ -25,8 +26,34 @@
 </template>
 <script>
 	export default{
+		data(){
+			return {
+				targets:[],
+				newTarget:'',
+				activeindex:''
+			}
+		},
+		watch: {
+		    targets () {
+		      localStorage.setItem('target', JSON.stringify(this.targets))
+		    }
+	  	},
 		methods:{
-			add(){
+			addtarget () {
+      			if (this.newTarget !== '') {
+        		this.targets.push(this.newTarget)
+        		this.newTarget = ''
+      			}
+    		},
+    		targetidx(index){
+    			this.activeindex=index;
+    			//console.log(index);
+    		},
+    		targetdel(){
+    			this.targets.splice(this.activeindex,1)
+    		},
+    		
+		/*	add(){
 				let dates=new Date();
 				let hours=dates.getHours();
 				let minutes=dates.getMinutes();
@@ -44,6 +71,13 @@
 				}else{
 					alert("该目标您已经记录啦");
 				}
+			}
+			*/
+			created () {
+	   			this.targets = JSON.parse(localStorage.getItem('target') || '[]')
+			    if (this.targets.length === 0) {
+			    	localStorage.setItem('target', JSON.stringify(this.targets))
+			    }
 			}
 		}
 	}
