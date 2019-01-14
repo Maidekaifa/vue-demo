@@ -18,9 +18,7 @@
 	  			<p class="text-center">{{target}}&nbsp;&nbsp;&nbsp;<i class="iconfont icon-jian" @click="targetdel"></i></p>
 	  			
 	  		</div>
-	  		<div id="unfinished">
-	  			<p class="complete">unfinished</p>
-	  		</div>
+	  		
 	  	</div>
     </div>
 </template>
@@ -51,9 +49,11 @@
     		},
     		targetdel(){
     			this.targets.splice(this.activeindex,1)
-    		},
+    		}
     		
-		/*	add(){
+		/*
+		 	//以下是JQ的写法
+		 	add(){
 				let dates=new Date();
 				let hours=dates.getHours();
 				let minutes=dates.getMinutes();
@@ -73,13 +73,14 @@
 				}
 			}
 			*/
+			},
 			created () {
-	   			this.targets = JSON.parse(localStorage.getItem('target') || '[]')
+	   			this.targets = JSON.parse(localStorage.getItem('target') || '[]');
 			    if (this.targets.length === 0) {
-			    	localStorage.setItem('target', JSON.stringify(this.targets))
+			    	localStorage.setItem('target', JSON.stringify(this.targets));
 			    }
 			}
-		}
+		
 	}
 </script>
 <style>
