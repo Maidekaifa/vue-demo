@@ -36,6 +36,11 @@ const mutations={
 		state.headerTxt="今天星期几啦";
 		state.QR_Code=true;
 		state.returns=true;
+	},
+	upFoods(state){
+		state.headerTxt="今天吃什么，不用纠结。";
+		state.QR_Code=true;
+		state.returns=true;
 	}
 }
 

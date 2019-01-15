@@ -52,6 +52,8 @@ import {mapGetters} from "vuex";
 					this.$store.dispatch("upNews");
 				}else if(to.path=="/weekNow"){
 					this.$store.dispatch("upWeek");
+				}else if(to.path=="/foods"){
+					this.$store.dispatch("upFoods");
 				}
 			}
 		}

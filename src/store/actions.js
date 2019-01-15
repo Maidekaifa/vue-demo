@@ -17,5 +17,8 @@ export default{
 	},
 	upWeek({commit}){
 		commit("upWeek");
+	},
+	upFoods({commit}){
+		commit("upFoods");
 	}
 }

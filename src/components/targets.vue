@@ -27,6 +27,7 @@
 		data(){
 			return {
 				targets:[],
+				
 				newTarget:'',
 				activeindex:''
 			}
@@ -39,9 +40,17 @@
 		methods:{
 			addtarget () {
       			if (this.newTarget !== '') {
-        		this.targets.push(this.newTarget)
-        		this.newTarget = ''
+      				if(this. targets!==''){
+	      				let arr=this.targets;
+	      				let tg=this.newTarget;
+	      				//console.log(typeof(tg));
+	      				//console.log(arr);
+	      				//console.log(arr.indexOf(tg))
+      				}
+      				this.targets.push(this.newTarget)
+	        		this.newTarget = ''
       			}
+      			
     		},
     		targetidx(index){
     			this.activeindex=index;
@@ -73,14 +82,13 @@
 				}
 			}
 			*/
-			},
-			created () {
-	   			this.targets = JSON.parse(localStorage.getItem('target') || '[]');
-			    if (this.targets.length === 0) {
-			    	localStorage.setItem('target', JSON.stringify(this.targets));
-			    }
-			}
-		
+		},
+		created () {
+		this.targets = JSON.parse(localStorage.getItem('target') || '[]');
+		    if (this.targets.length === 0) {
+		    	localStorage.setItem('target', JSON.stringify(this.targets));
+		    }
+		}
 	}
 </script>
 <style>
