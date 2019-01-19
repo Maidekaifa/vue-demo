@@ -45,6 +45,10 @@ Vue.filter('covertTime',function(data,formatStr){
 })
 
 
+//引入vuePreview
+import VuePreview from 'vue-preview'
+Vue.use(VuePreview)
+
 new Vue({
   router,
   store,

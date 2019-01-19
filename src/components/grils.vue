@@ -1,12 +1,13 @@
 <template>
     <div>
-        <div class="container">
+        <div id="bg" class="container-fluid">
         	<ul>
 				<li v-for="(item,index) in imgs" :key="index">
-					<img v-lazy="item" :src="item.url">
+					<img class="img-responsive center-block" v-lazy="item.url">
 				</li>
 			</ul>
         </div>
+        <div style="width:100%;height:58px;"></div>
     </div>
 </template>
 <script>
@@ -22,13 +23,20 @@
 			this.$axios.get('../../static/grils.json')
 			.then(res=>{
 				this.imgs=res.data.message;
-			}).catch(err=>console.log(出现错误,
+			}).catch(err=>console.log(图片加载出现错误,
 			err))
 		}
 	}
 </script>
 <style scoped>
-	ul li img [lazy=loading] {
+	#bg{
+		background: #F5F5F5;
+	}
+	ul li img{
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	image[lazy=loading] {
 		width: 40px;
 		height: 300px;
 		margin: auto;

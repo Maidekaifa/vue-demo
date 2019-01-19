@@ -14,10 +14,10 @@
                         <p class="footerTxt">目标</p>
                     </a>
                 </router-link>
-                <router-link active-class="active" tag="li" to="/memo">
+                <router-link active-class="active" tag="li" to="/grils">
                     <a href="#">
                         <i class="iconfont icon-beiwanglu"></i>
-                        <p class="footerTxt">备忘</p>
+                        <p class="footerTxt">图片</p>
                     </a>
                 </router-link>
                 <router-link active-class="active" tag="li" to="/my">

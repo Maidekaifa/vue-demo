@@ -44,8 +44,8 @@ import {mapGetters} from "vuex";
 					this.$store.dispatch("upTarget");
 				}else if(to.path=="/home"){
 					this.$store.dispatch("upHome");
-				}else if(to.path=="/memo"){
-					this.$store.dispatch("upMemo");
+				}else if(to.path=="/grils"){
+					this.$store.dispatch("upGrils");
 				}else if(to.path=="/my"){
 					this.$store.dispatch("upMy");
 				}else if(to.path=="/news_list"){

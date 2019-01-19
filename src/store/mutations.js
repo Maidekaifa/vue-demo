@@ -17,8 +17,8 @@ const mutations={
 		state.QR_Code=false;
 		state.returns=false;
 	},
-	upMemo(state){
-		state.headerTxt="我的备忘录";
+	upGrils(state){
+		state.headerTxt="看看美女放松一下";
 		state.QR_Code=true;
 		state.returns=true;
 	},

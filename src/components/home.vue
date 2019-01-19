@@ -41,7 +41,7 @@ export default{
 			grids:[
 					{className:'iconfont icon-riqi',title:'dateplan',router:{name:"target"}},
 					{className:'iconfont icon-bianjibijishishouxie',title:'Watch the news',router:{name:"news_list"}},
-					{className:'iconfont icon-beiwanglu1',title:'memo',router:{name:"memo"}},
+					{className:'iconfont icon-beiwanglu1',title:'Pictures relax',router:{name:"grils"}},
 					{className:'iconfont icon-chifan2600',title:'What to eat today?',router:{name:"foods"}},
 					{className:'iconfont icon-fangjiashenqingicon-',title:'When is the vacation?',router:{name:"weekNow"}},
 					{className:'iconfont icon-yundong',title:'What sports do you do today?',router:{name:"news_list"}}
@@ -66,7 +66,7 @@ export default{
     		
     		//又不知不觉的用起了JQ，手欠！！！$("#punch a i").html(year+'年'+month+'月'+day+'日');
     		
-    		let datesNow=year+"年"+month+"月"+day+"日";
+    		let datesNow=year+"-"+month+"-"+day;
     		return datesNow;
     	}
     }

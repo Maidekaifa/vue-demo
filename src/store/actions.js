@@ -6,8 +6,8 @@ export default{
 	upHome({commit}){
 		commit("upHome");
 	},
-	upMemo({commit}){
-		commit("upMemo");
+	upGrils({commit}){
+		commit("upGrils");
 	},
 	upMy({commit}){
 		commit("upMy");

@@ -1,6 +1,6 @@
 import homeview from '../components/home.vue';
 import targetview from '../components/targets.vue';
-import memoview from '../components/memo.vue';
+import grilsview from '../components/grils.vue';
 import myview from '../components/my.vue';
 import newsListview from '../components/news_list.vue';
 import weekNow from '../components/weekNow.vue';
@@ -24,9 +24,9 @@ export default[
         component:targetview
     },
     {
-    	name:"memo",
-        path:"/memo",
-        component:memoview
+    	name:"grils",
+        path:"/grils",
+        component:grilsview
     },
     {
     	name:"my",
