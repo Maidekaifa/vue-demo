@@ -18,7 +18,7 @@ import {mapGetters} from "vuex";
 				this.$toast({
 					message: '怎么点都不会出来二维码的了',
   					position: 'middle',
-  					iconClass:'iconfont icon-Tick',
+  					iconClass:'iconfont icon-shouye',
   					duration: 2000
 				})
 			}

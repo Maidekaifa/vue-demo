@@ -9,7 +9,7 @@
 						<span>{{news.title}}</span>
 						<div class="news_desc">
 							<p>点击数:{{news.click}}</p>
-							<p>发表时间:{{news.add_time | covertTime('YYYY-MM-DD')}}</p>
+							<p>发表时间:{{news.add_time | covertTime('YYYY年MM月DD日')}}</p>
 						</div>
 					</div>
 				</router-link>

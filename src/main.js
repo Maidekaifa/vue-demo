@@ -45,7 +45,7 @@ Vue.filter('covertTime',function(data,formatStr){
 })
 
 
-//引入vuePreview
+//引入vuePreview图片预览器
 import VuePreview from 'vue-preview'
 Vue.use(VuePreview)
 
