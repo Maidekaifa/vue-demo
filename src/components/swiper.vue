@@ -5,13 +5,13 @@
         <div class="swiper-container" style="background: #FFFFFF;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                    <img src="../assets/img/banner1.jpg" alt="banner" class="img-responsive center-block" />
+                    <img src="../assets/img/banner1.gif" alt="banner" class="img-responsive center-block" />
                 </div>
                 <div class="swiper-slide">
-                	<img src="../assets/img/banner1.jpg" alt="banner" class="img-responsive center-block" />
+                	<img src="../assets/img/banner2.jpg" alt="banner" class="img-responsive center-block" />
                 </div>
                 <div class="swiper-slide">
-                	<img src="../assets/img/banner1.jpg" alt="banner" class="img-responsive center-block" />
+                	<img src="../assets/img/banner3.gif" alt="banner" class="img-responsive center-block" />
                 </div>
                 <div class="swiper-slide">
                 	<img src="../assets/img/banner1.jpg" alt="banner" class="img-responsive center-block" />
