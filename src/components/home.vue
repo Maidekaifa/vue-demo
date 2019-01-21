@@ -4,7 +4,7 @@
     	<Swiperview></Swiperview>
     	
         <div class="container-fluid" style="background: #FFFFFF;margin-top: 5px;">
-        	<div class="col-xs-4 text-center" id="punch">
+        	<div class="col-xs-4 text-center" id="punch" @click="run">
         		<a>
         			<i>{{datenow}}</i>
         			<p>打卡</p>
@@ -68,6 +68,14 @@ export default{
     		
     		let datesNow=year+"-"+month+"-"+day;
     		return datesNow;
+    	},
+    	run(){
+			this.$toast({
+				message: '打卡成功',
+  				position: 'middle',
+  				iconClass:'iconfont icon-shouye',
+  				duration: 2000
+			})
     	}
     }
     
