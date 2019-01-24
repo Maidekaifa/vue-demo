@@ -65,7 +65,6 @@ export default{
     		day = day > 9 ? day : ('0' + day);
     		
     		//又不知不觉的用起了JQ，手欠！！！$("#punch a i").html(year+'年'+month+'月'+day+'日');
-    		
     		let datesNow=year+"-"+month+"-"+day;
     		return datesNow;
     	},
