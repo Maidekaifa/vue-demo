@@ -41,6 +41,11 @@ const mutations={
 		state.headerTxt="今天吃什么，不用纠结。";
 		state.QR_Code=true;
 		state.returns=true;
+	},
+	upSports(state){
+		state.headerTxt="做做运动，运动身体会更健康哦";
+		state.QR_Code=true;
+		state.returns=true;
 	}
 }
 

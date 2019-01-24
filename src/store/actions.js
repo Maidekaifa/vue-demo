@@ -20,5 +20,8 @@ export default{
 	},
 	upFoods({commit}){
 		commit("upFoods");
+	},
+	upSports({commit}){
+		commit("upSports");
 	}
 }

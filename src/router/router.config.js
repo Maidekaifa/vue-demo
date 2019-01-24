@@ -6,6 +6,7 @@ import newsListview from '../components/news_list.vue';
 import weekNow from '../components/weekNow.vue';
 import newsDetail from '../components/news_detail.vue';
 import foodview from '../components/foods.vue';
+import sportview from '../components/sports.vue';
 
 
 export default[
@@ -52,5 +53,10 @@ export default[
     	name:"foods",
     	path:"/foods",
     	component:foodview
-    }
+    },
+	{
+		name:"sports",
+		path:"/sports",
+		component:sportview
+	}
 ]

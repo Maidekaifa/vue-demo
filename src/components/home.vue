@@ -44,7 +44,7 @@ export default{
 					{className:'iconfont icon-beiwanglu1',title:'Pictures relax',router:{name:"grils"}},
 					{className:'iconfont icon-chifan2600',title:'What to eat today?',router:{name:"foods"}},
 					{className:'iconfont icon-fangjiashenqingicon-',title:'When is the vacation?',router:{name:"weekNow"}},
-					{className:'iconfont icon-yundong',title:'What sports do you do today?',router:{name:"news_list"}}
+					{className:'iconfont icon-yundong',title:'What sports do you do today?',router:{name:"sports"}}
 			]
 		}
 	},

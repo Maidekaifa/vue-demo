@@ -28,7 +28,7 @@
 				   <div>
 						    <img class="img-responsive center-block" src="../../static/img/begin.png" >
 								<span v-if="speed==180">{{start}}</span>
-								<span v-if="speed!=180">纠结中<span class="dotting"></span></span>
+								<span v-if="speed!=180">{{running}}<span class="dotting"></span></span>
 					 </div>
 			</div>
 			<div class="line_item text-center col-xs-4" :class="index == 4 ? 'active' : 'white_item'">
@@ -62,6 +62,8 @@ export default {
   data(){
 		return {
 			start: "开始",
+			
+			running:"纠结中",
 			
 			arr:["必胜客","兰州拉面","M记","KFC","真功夫","屎","星巴克","尊宝比萨"],
 			
@@ -129,7 +131,7 @@ export default {
             this.times = 0
 						this.speed = 180  //初始化速度
 					//	*************************************可以获取该标签**********************************************
-						//console.log(this.$refs.content[index]);
+						console.log(this.$refs.content);
 						console.log(this.arr[this.index]);
 						let msg=this.arr[this.index];
 						this.$toast({
