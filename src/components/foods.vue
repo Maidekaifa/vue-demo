@@ -3,25 +3,25 @@
 			<div class="line_item text-center col-xs-4" :class="index == 1 ? 'active' : 'white_item'">
 				   <div>
 						    <img class="img-responsive center-block" src="../../static/img/food1.png" >
-								<span>兰州拉面</span>
+								<span ref="content">兰州拉面</span>
 					 </div>
 			</div>
 			<div class="line_item text-center col-xs-4" :class="index == 2 ? 'active' : 'white_item'">
 				   <div>
 						    <img class="img-responsive center-block" src="../../static/img/food2.png" >
-								<span>M记</span>
+								<span ref="content">M记</span>
 					 </div>
 			</div>
 			<div class="line_item text-center col-xs-4" :class="index == 3 ? 'active' : 'white_item'">
 				   <div>
 						    <img class="img-responsive center-block" src="../../static/img/food3.png" >
-								<span>KFC</span>
+								<span ref="content">KFC</span>
 					 </div>
 			</div>
 			<div class="line_item text-center col-xs-4" :class="index == 0 ? 'active' : 'white_item'">
 				   <div>
 						    <img class="img-responsive center-block" src="../../static/img/food4.png" >
-								<span>必胜客</span>
+								<span ref="content">必胜客</span>
 					 </div>
 			</div>
 			<div class="line_item text-center col-xs-4" @click="goLottery()">
@@ -34,25 +34,25 @@
 			<div class="line_item text-center col-xs-4" :class="index == 4 ? 'active' : 'white_item'">
 				   <div>
 						    <img class="img-responsive center-block" src="../../static/img/food5.png" >
-								<span>真功夫</span>
+								<span ref="content">真功夫</span>
 					 </div>
 			</div>
 			<div class="line_item text-center col-xs-4" :class="index == 7 ? 'active' : 'white_item'">
 				   <div>
 						    <img class="img-responsive center-block" src="../../static/img/food6.png" >
-								<span>尊宝比萨</span>
+								<span ref="content">尊宝比萨</span>
 					 </div>
 			</div>
 			<div class="line_item text-center col-xs-4" :class="index == 6 ? 'active' : 'white_item'">
 				   <div>
 						    <img class="img-responsive center-block" src="../../static/img/food7.png" >
-								<span>星巴克</span>
+								<span ref="content">星巴克</span>
 					 </div>
 			</div>
 			<div class="line_item text-center col-xs-4" :class="index == 5 ? 'active' : 'white_item'">
 				   <div>
 						    <img class="img-responsive center-block" src="../../static/img/food8.png" >
-								<span>屎</span>
+								<span ref="content">屎</span>
 					 </div>
 			</div>
 	</div>
@@ -62,6 +62,8 @@ export default {
   data(){
 		return {
 			start: "开始",
+			
+			arr:["必胜客","兰州拉面","M记","KFC","真功夫","屎","星巴克","尊宝比萨"],
 			
 　　		index: 3,    // 当前转动到哪个位置，起点位置
 
@@ -126,9 +128,16 @@ export default {
 
             this.times = 0
 						this.speed = 180  //初始化速度
-						
-						//console.log(this.index)
-						
+					//	*************************************可以获取该标签**********************************************
+						//console.log(this.$refs.content[index]);
+						console.log(this.arr[this.index]);
+						let msg=this.arr[this.index];
+						this.$toast({
+							message: '不用纠结啦，今天吃'+msg+'吧',
+							position: 'bottom',
+							iconClass:'iconfont icon-shouye',
+							duration: 2000
+						})
 						
 
           } else {
@@ -155,7 +164,7 @@ export default {
 
     .white_item{
 
-    background-color: #fff;
+    background-color: #FFFFFF;
 
     }
 		
