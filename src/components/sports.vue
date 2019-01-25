@@ -23,8 +23,8 @@
 						msrc: '../../static/img/basketballmin.png',
 						alt: 'picture1',
 						title: '一位外国父亲陪着孩子们打篮球。',
-						w: 600,
-						h: 400
+						w: 1200,
+						h: 900
 					},
 					{
 						src: '../../static/img/football.jpg',
@@ -39,8 +39,8 @@
 						msrc: '../../static/img/runningmin.png',
 						alt: 'picture3',
 						title: '跑步最佳时间是上午9点到10点和下午4点到6点。前者时空气清新，体内肾上腺皮质激素水平达峰值。而根据生物钟，约4点到6点身体的适应能力及体力的调动发挥最佳。',
-						w: 600,
-						h: 400
+						w: 1200,
+						h: 900
 					},
 					{
 						src: '../../static/img/yujia.jpg',
